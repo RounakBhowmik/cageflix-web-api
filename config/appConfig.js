@@ -15,12 +15,9 @@ module.exports = {
         DB_PASSWORD: process.env.DB_PASSWORD,
         DB_DATABASE_NAME: process.env.DB_NAME
     },
-    // LOGIN_CONFIG: {
-    //     ADMIN_LOGIN: {
-    //         JWT_SECRET: process.env.ADMIN_LOGIN_JWT_SECRET,
-    //         LOGIN_SECRET_KEY: process.env.ADMIN_LOGIN_SECRET_KEY,
-    //         JWT_VALIDITY: add_hours(new Date(), 24)
-    //     }
-    // }
+    USER_LOGIN_CONFIG: {
+            LOGIN_SECRET_KEY: process.env.USER_LOGIN_SECRET_KEY,
+            // JWT_VALIDITY: add_hours(new Date(), 24)
+    }
 
 };
