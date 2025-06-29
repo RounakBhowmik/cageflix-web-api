@@ -32,7 +32,9 @@ exports.user_signin = async (req, res, next) => {
         const { user } = req;
         if (isEmpty(user)) {
             return res.status(400).json({
-                message: "Invalid Email or Password",
+                error: {
+                    message: "Invalid Email or Password",
+                },
                 status: 0
             });
         }
