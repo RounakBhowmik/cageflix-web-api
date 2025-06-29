@@ -8,7 +8,7 @@ exports.check_user_signin_email_exist = async (req, res, next) => {
         if (!isNull(userDetials)) {
             return res.status(400).json({
                 error: {
-                    message: "User already exist with this mail id.",
+                    email: "User already exist with this mail id.",
                 },
                 status: 0
             });
